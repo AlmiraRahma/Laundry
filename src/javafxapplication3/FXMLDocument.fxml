@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="371.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="javafxapplication3.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="145.0" layoutY="28.0" prefHeight="17.0" prefWidth="101.0" text="Data Isian Laundry" />
+      <TextField fx:id="nama" layoutX="145.0" layoutY="75.0" />
+      <TextField fx:id="alamat" layoutX="145.0" layoutY="108.0" />
+      <TextField fx:id="berat" layoutX="146.0" layoutY="143.0" prefHeight="25.0" prefWidth="79.0" />
+      <TextField fx:id="no" layoutX="145.0" layoutY="177.0" />
+      <RadioButton fx:id="ck" layoutX="152.0" layoutY="212.0" mnemonicParsing="false" text="Cuci Kering">
+         <toggleGroup>
+            <ToggleGroup fx:id="pilihan" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="s" layoutX="152.0" layoutY="238.0" mnemonicParsing="false" text="Setrika" toggleGroup="$pilihan" />
+      <RadioButton fx:id="cks" layoutX="152.0" layoutY="266.0" mnemonicParsing="false" text="Cuci Kering Setrika" toggleGroup="$pilihan" />
+      <TextField fx:id="tgl" layoutX="146.0" layoutY="290.0" />
+      <Button fx:id="oke" layoutX="99.0" layoutY="324.0" mnemonicParsing="false" onAction="#proses" text="OKE" />
+      <Button fx:id="hps" layoutX="219.0" layoutY="324.0" mnemonicParsing="false" onAction="#proseshps" text="HAPUS" />
+      <TextArea fx:id="TA" layoutX="81.0" layoutY="361.0" prefHeight="165.0" prefWidth="200.0" />
+      <Label layoutX="14.0" layoutY="79.0" text="Nama" />
+      <Label layoutX="14.0" layoutY="112.0" text="Alamat" />
+      <Label layoutX="16.0" layoutY="147.0" text="Berat Cucian" />
+      <Label layoutX="16.0" layoutY="181.0" text="Nomor Telepon" />
+      <Label layoutX="14.0" layoutY="212.0" text="Pilih Peket Laundry" />
+      <Label layoutX="16.0" layoutY="294.0" text="Tanggal Pengambilan" />
+      <Label layoutX="232.0" layoutY="143.0" prefHeight="25.0" prefWidth="28.0" text="KG" />
+    </children>
+</AnchorPane>
